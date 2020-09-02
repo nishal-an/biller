@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.justify-space-btwn {
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: #f3f3f3;
+}
+.makeStyles-root-1 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+form label {
+  font-weight: 600 !important;
+  color: #404040 !important;
+}
+button {
+  margin: 8px !important;
+}
+.green {
+  background-color: #439a46 !important;
+  color: #fff !important;
+}
+.yellow {
+  background-color: #ffa500 !important;
+  color: #fff !important;
+}
+.red {
+  background-color: #e42b0a !important;
+  color: #fff !important;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.modal-form .MuiFormControl-root {
+  width: 100%;
+}
+.close-icn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.modal-form {
+  padding-top: 1.5em;
+}
+.modal-btns-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
 }

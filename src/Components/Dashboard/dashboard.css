@@ -1,0 +1,18 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.dashboard-wrap {
+  margin-top: 114px;
+}
+.dash-body {
+  padding: 35px 25px;
+}
+.dash-header {
+  background-color: rgba(34, 137, 255, 0.904);
+  padding: 15px;
+}
+.dash-header h2 {
+  color: #fff;
+  margin: 0;
+}
