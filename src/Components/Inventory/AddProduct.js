@@ -56,11 +56,23 @@ function AddProduct() {
     //   element.value = "";
     // });
   });
+  const resetInput = () => {
+    setUserInput({
+      productName: "",
+      productDescription: "",
+      hsCode: "",
+      taxRate: "",
+      cessRate: "",
+      productUnit: "",
+      unitPrice: "",
+      currentStock: "",
+    });
+  };
 
   const [
     addProduct,
-    { loading: mutationLoading, error: mutationError, data },
-  ] = useMutation(ADD_PRODUCT);
+    { loading: mutationLoading, error: mutationError },
+  ] = useMutation(ADD_PRODUCT, { onCompleted: resetInput });
 
   const handleSubmit = (e) => {
     e.preventDefault();
