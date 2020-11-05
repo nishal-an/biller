@@ -43,7 +43,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function InvoiceCard() {
+export default function InvoiceCard(props) {
   const classes = useStyles();
 
   const { loading, error, data } = useQuery(GET_INVOICES);

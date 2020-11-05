@@ -8,7 +8,7 @@ import React from "react";
 // import Paper from "@material-ui/core/Paper";
 // import Button from "@material-ui/core/Button";
 
-import { useRouteMatch, Link, Route, Switch } from "react-router-dom";
+import { useRouteMatch, Route, Switch } from "react-router-dom";
 import InventoryList from "./InventoryList";
 
 import { useQuery } from "@apollo/client";

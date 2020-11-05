@@ -20,9 +20,7 @@ form label {
   font-weight: 600 !important;
   color: #404040 !important;
 }
-button {
-  margin: 8px !important;
-}
+
 .green {
   background-color: #439a46 !important;
   color: #fff !important;
@@ -39,7 +37,7 @@ a {
   color: inherit !important;
   text-decoration: none !important;
 }
-.modal-form .MuiFormControl-root {
+form .MuiFormControl-root {
   width: 100%;
 }
 .close-icn {
@@ -55,4 +53,30 @@ a {
   display: flex;
   justify-content: flex-end;
   margin-top: 25px;
+}
+.client-address {
+  display: flex;
+  padding-bottom: 3em;
+}
+
+.client-address > div {
+  width: 50%;
+}
+.client-details h2 {
+  margin-top: 0;
+}
+.bill-amount {
+  max-width: 290px;
+  margin-left: auto;
+}
+
+.amount-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.amount-item:last-child {
+  margin-bottom: 0;
 }

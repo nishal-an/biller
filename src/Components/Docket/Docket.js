@@ -6,7 +6,7 @@ function Docket() {
   return (
     <div className="docket">
       <ul>
-        <Link to="/invoices">
+        <Link to="/">
           <li>invoices</li>
         </Link>
         <Link to="/clients">

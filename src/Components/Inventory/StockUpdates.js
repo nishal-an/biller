@@ -36,7 +36,7 @@ function StockUpdates(props) {
   if (error) return <p>Error :(</p>;
 
   const inventoryList = data.stock_update;
-  console.log(inventoryList);
+  // console.log(inventoryList);
 
   return (
     <Paper elevation={3}>

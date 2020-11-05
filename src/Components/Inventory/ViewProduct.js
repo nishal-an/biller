@@ -267,7 +267,7 @@ function ProductUpdates(props) {
     setSelectedDate(date);
   };
 
-  console.log(userInput.purchaseQty);
+  // console.log(userInput.purchaseQty);
   // console.log(Moment(selectedDate).format());
 
   const handleStockUpdate = (e) => {
@@ -364,7 +364,7 @@ function ProductUpdates(props) {
                       disableToolbar
                       variant="inline"
                       format="dd/MM/yyyy"
-                      margin="normal"
+                      margin="dense"
                       id="date-picker-inline"
                       label="Date picker inline"
                       value={selectedDate}

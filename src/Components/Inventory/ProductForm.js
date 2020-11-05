@@ -48,41 +48,41 @@ const ADD_PRODUCT = gql`
   }
 `;
 
-const UPDATE_PRODUCT = gql`
-  mutation MyMutation(
-    $productId: String!
-    $name: String!
-    $description: String
-    $hsn_code: String
-    $cgst: float8
-    $sgst: float8
-    $cess: float8
-    $unit: String
-    $price: float8
-    $organization_id: String
-  ) {
-    update_product(
-      where: { id: { _eq: $productId } }
-      _set: {
-        name: $name
-        description: $description
-        hsn_code: $hsn_code
-        cgst: $cgst
-        sgst: $sgst
-        cess: $cess
-        unit: $unit
-        price: $price
-        organization_id: "58bdf297bdcb49fcbe3bf84c5859a63d"
-      }
-    ) {
-      affected_rows
-      returning {
-        id
-        name
-      }
-    }
-  }
-`;
+// const UPDATE_PRODUCT = gql`
+//   mutation MyMutation(
+//     $productId: String!
+//     $name: String!
+//     $description: String
+//     $hsn_code: String
+//     $cgst: float8
+//     $sgst: float8
+//     $cess: float8
+//     $unit: String
+//     $price: float8
+//     $organization_id: String
+//   ) {
+//     update_product(
+//       where: { id: { _eq: $productId } }
+//       _set: {
+//         name: $name
+//         description: $description
+//         hsn_code: $hsn_code
+//         cgst: $cgst
+//         sgst: $sgst
+//         cess: $cess
+//         unit: $unit
+//         price: $price
+//         organization_id: "58bdf297bdcb49fcbe3bf84c5859a63d"
+//       }
+//     ) {
+//       affected_rows
+//       returning {
+//         id
+//         name
+//       }
+//     }
+//   }
+// `;
 
 function ProductForm(props) {
   useEffect(() => {
@@ -91,8 +91,8 @@ function ProductForm(props) {
     //   element.value = "";
     // });
   });
-  if (props.isUpdate) {
-  }
+  // if (props.isUpdate) {
+  // }
 
   const [
     addProduct,
